@@ -26,22 +26,16 @@ input {
     min-height: 470px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2px;
 }
 
 .previous-input {
+    text-align: right;
     grid-column: span 4;
 }
 
 .current-input {
+    text-align: right;
     grid-column: span 4;
-}
-
-.zero {
-    grid-column: span 2;
-}
-
-.equals {
-    grid-row: span 2;
 }
