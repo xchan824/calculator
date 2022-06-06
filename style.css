@@ -26,6 +26,8 @@ input {
 }
 
 #calculator {
+    padding: 10px;
+    border-radius: 10px;
     min-width: 320px;
     min-height: 470px;
     display: grid;
@@ -36,8 +38,10 @@ input {
 }
 
 .current-input {
+    display: flex;
     background-color: white;
-    text-align: right;
+    justify-content: flex-end;
+    align-items: center;
     grid-column: span 4;
 }
 
