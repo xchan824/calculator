@@ -7,10 +7,14 @@ body {
     background-color: gray;
 }
 
-button {
+button, div {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     border: 0;
+}
+
+div {
+    padding: 5px;
 }
 
 button:hover {
@@ -26,16 +30,35 @@ input {
     min-height: 470px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2px;
-}
-
-.previous-input {
-    text-align: right;
-    grid-column: span 4;
+    background-color: black;
 }
 
 .current-input {
+    background-color: white;
     text-align: right;
     grid-column: span 4;
+}
+
+#equal {
+    background-color: lightblue;
+    grid-row: span 2;
+}
+
+#equal:hover {
+    background-color: rgba(173, 216, 230, 0.7);
+    grid-row: span 2;
+}
+
+#clear {
+    background-color: red;
+}
+
+#clear:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+#zero {
+    grid-column: span 2;
 }
